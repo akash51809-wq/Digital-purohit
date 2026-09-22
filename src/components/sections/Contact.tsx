@@ -65,19 +65,19 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'Email',
-      value: 'velioratechworks@gmail.com',
-      link: 'mailto:velioratechworks@gmail.com'
+      value: 'digitalpurohit1@gmail.com',
+      link: 'mailto:digitalpurohit1@gmail.com'
     },
     {
       icon: Phone,
       title: 'Phone',
-      value: '+91 86238 96542',
-      link: 'tel:+918623896542'
+      value: '+91 93358 19686',
+      link: 'tel:9335819686'
     },
     {
       icon: MapPin,
       title: 'Location',
-      value: 'Pune, Maharashtra, India',
+      value: '993 Meerapur, Prayagraj',
       link: '#'
     }
   ]

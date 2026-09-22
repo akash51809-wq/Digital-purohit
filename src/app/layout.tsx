@@ -18,12 +18,12 @@ const poppins = Poppins({
 })
 
 export const metadata: Metadata = {
-  title: 'Veliora TechWorks - Building Intelligent Digital Solutions',
-  description: 'Professional technology solutions company specializing in web development, mobile apps, and digital transformation.',
-  keywords: 'web development, mobile apps, digital solutions, technology, software development',
-  authors: [{ name: 'Veliora TechWorks' }],
-  creator: 'Veliora TechWorks',
-  publisher: 'Veliora TechWorks',
+  title: 'Digital Purohit - Building Intelligent Digital Solutions',
+  description: 'Digital Purohit provides professional technology solutions, web development, mobile apps, and digital transformation.',
+  keywords: 'Digital Purohit, web development, mobile apps, digital solutions, technology, software development',
+  authors: [{ name: 'Digital Purohit' }],
+  creator: 'Digital Purohit',
+  publisher: 'Digital Purohit',
   icons: {
     icon: '/favicon.svg',
     shortcut: '/favicon.svg',
@@ -31,8 +31,8 @@ export const metadata: Metadata = {
   },
   manifest: '/manifest.json',
   openGraph: {
-    title: 'Veliora TechWorks - Building Intelligent Digital Solutions',
-    description: 'Professional technology solutions company specializing in web development, mobile apps, and digital transformation.',
+    title: 'Digital Purohit - Building Intelligent Digital Solutions',
+    description: 'Digital Purohit provides professional technology solutions, web development, mobile apps, and digital transformation.',
     type: 'website',
   },
   robots: {
@@ -50,7 +50,7 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <meta name="theme-color" content="#ecc94b" />
+        <meta name="theme-color" content="#F15A24" />
       </head>
       <body className={`${inter.variable} ${poppins.variable} font-sans antialiased`} suppressHydrationWarning>
         <ErrorBoundary>

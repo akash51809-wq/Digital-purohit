@@ -3,8 +3,8 @@ import Footer from '@/components/layout/Footer'
 import Contact from '@/components/sections/Contact'
 
 export const metadata = {
-  title: 'Contact Us - Veliora TechWorks',
-  description: 'Get in touch with Veliora TechWorks for your technology needs. Contact us for consultations and project inquiries.',
+  title: 'Contact Us - Digital Purohit',
+  description: 'Get in touch with Digital Purohit for your technology needs. Contact us for consultations and project inquiries.',
 }
 
 export default function ContactPage() {

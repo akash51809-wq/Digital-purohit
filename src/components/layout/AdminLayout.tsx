@@ -43,9 +43,9 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
         <div className="flex items-center h-16 px-6 border-b border-gray-800">
           <Link href="/admin" className="flex items-center space-x-2">
             <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold">V</span>
+              <span className="text-white font-bold text-xs">DP</span>
             </div>
-            <span className="text-white font-display font-semibold">Admin</span>
+            <span className="text-white font-display font-semibold">Digital Purohit</span>
           </Link>
         </div>
 
@@ -79,7 +79,7 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
             </div>
             <div className="overflow-hidden">
               <div className="text-white font-medium truncate">Admin User</div>
-              <div className="text-gray-400 text-sm truncate">admin@veliora.com</div>
+              <div className="text-gray-400 text-sm truncate">digitalpurohit1@gmail.com</div>
             </div>
           </div>
           <button className="flex items-center space-x-2 text-gray-400 hover:text-white transition-colors duration-200 w-full px-2 py-2 rounded-lg hover:bg-gray-800">
@@ -97,9 +97,9 @@ const AdminLayout = ({ children }: { children: React.ReactNode }) => {
             {/* Mobile Logo */}
             <div className="lg:hidden flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-primary-500 to-accent-500 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold">V</span>
+                <span className="text-white font-bold text-xs">DP</span>
               </div>
-              <span className="text-gray-900 font-display font-semibold">Admin</span>
+              <span className="text-gray-900 font-display font-semibold">Digital Purohit</span>
             </div>
 
             {/* Right Actions */}

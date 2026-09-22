@@ -3,7 +3,7 @@ import Footer from '@/components/layout/Footer'
 import Services from '@/components/sections/Services'
 
 export const metadata = {
-  title: 'Our Services - Veliora TechWorks',
+  title: 'Our Services - Digital Purohit',
   description: 'Explore our comprehensive technology services including web development, mobile apps, SaaS solutions, and more.',
 }
 

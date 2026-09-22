@@ -122,7 +122,7 @@ export default function SettingsPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Site Title</label>
                 <input
                   type="text"
-                  defaultValue="Veliora TechWorks"
+                  defaultValue="Digital Purohit"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-700 focus:border-transparent"
                 />
               </div>
@@ -152,7 +152,7 @@ export default function SettingsPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                 <input
                   type="email"
-                  defaultValue="hello@veliora-techworks.com"
+                  defaultValue="digitalpurohit1@gmail.com"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-700 focus:border-transparent"
                 />
               </div>
@@ -160,7 +160,7 @@ export default function SettingsPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Phone</label>
                 <input
                   type="tel"
-                  defaultValue="+1 (555) 123-4567"
+                  defaultValue="+91 93358 19686"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-700 focus:border-transparent"
                 />
               </div>
@@ -168,7 +168,7 @@ export default function SettingsPage() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Location</label>
                 <input
                   type="text"
-                  defaultValue="San Francisco, CA"
+                  defaultValue="993 Meerapur, Prayagraj"
                   className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-700 focus:border-transparent"
                 />
               </div>

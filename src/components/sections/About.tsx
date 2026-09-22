@@ -57,11 +57,10 @@ const About = () => {
           {/* Section Header */}
           <div className="text-center mb-12 sm:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-dark-800 mb-4 sm:mb-6 px-4">
-              About <span className="gradient-text">Veliora TechWorks</span>
+              About <span className="gradient-text">Digital Purohit</span>
             </h2>
             <p className="text-base sm:text-lg md:text-xl text-dark-600 max-w-3xl mx-auto px-4">
-              Founded in 2026, we are a premium technology startup dedicated to building 
-              the future of digital solutions.
+              Founded in 2026, we are dedicated to building the future of digital solutions and smart services.
             </p>
           </div>
 
@@ -73,7 +72,7 @@ const About = () => {
                 Building Tomorrow's Technology Today
               </h3>
               <p className="text-base sm:text-lg text-dark-600 mb-4 sm:mb-6 leading-relaxed">
-                At Veliora TechWorks, we believe that technology should be a catalyst for growth, 
+                At Digital Purohit, we believe that technology should be a catalyst for growth, 
                 not a barrier. Our team of expert developers, designers, and strategists work 
                 together to create solutions that are not just functional, but transformational.
               </p>
@@ -126,11 +125,10 @@ const About = () => {
           className="text-center mb-12 sm:mb-16"
         >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-dark-800 mb-4 sm:mb-6 px-4">
-            About <span className="gradient-text">Veliora TechWorks</span>
+            About <span className="gradient-text">Digital Purohit</span>
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-dark-600 max-w-3xl mx-auto px-4">
-            Founded in 2026, we are a premium technology startup dedicated to building 
-            the future of digital solutions.
+            Founded in 2026, we are dedicated to building the future of digital solutions and smart services.
           </p>
         </motion.div>
 
@@ -148,7 +146,7 @@ const About = () => {
               Building Tomorrow's Technology Today
             </h3>
             <p className="text-base sm:text-lg text-dark-600 mb-4 sm:mb-6 leading-relaxed">
-              At Veliora TechWorks, we believe that technology should be a catalyst for growth, 
+              At Digital Purohit, we believe that technology should be a catalyst for growth, 
               not a barrier. Our team of expert developers, designers, and strategists work 
               together to create solutions that are not just functional, but transformational.
             </p>
@@ -183,7 +181,7 @@ const About = () => {
               {aboutImage ? (
                 <Image
                   src={aboutImage}
-                  alt="Veliora TechWorks Team"
+                  alt="Digital Purohit Team"
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 50vw"
@@ -191,10 +189,18 @@ const About = () => {
                 />
               ) : (
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="text-4xl sm:text-6xl font-display font-bold text-primary-500 mb-2 sm:mb-4">VTW</div>
-                    <p className="text-sm sm:text-base text-dark-600 px-4">Upload image in Admin → Media</p>
-                    <p className="text-xs sm:text-sm text-dark-500 mt-2">Category: about</p>
+                  <div className="text-center p-6 bg-white/90 backdrop-blur rounded-2xl shadow-lg border border-gray-100 max-w-xs mx-auto">
+                    <div className="w-20 h-20 mx-auto mb-3">
+                      <Image
+                        src="/dp-icon.png"
+                        alt="Digital Purohit"
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-contain"
+                      />
+                    </div>
+                    <div className="text-xl font-display font-bold text-dark-800 mb-1">Digital Purohit</div>
+                    <p className="text-xs text-dark-500">Upload image in Admin → Media</p>
                   </div>
                 </div>
               )}
@@ -265,18 +271,18 @@ const About = () => {
               A Message from Our Founder
             </h3>
             <blockquote className="text-base sm:text-lg md:text-xl text-dark-700 italic leading-relaxed mb-6 sm:mb-8">
-              "At Veliora TechWorks, we don't just build software – we craft digital experiences 
+              "At Digital Purohit, we don't just build software – we craft digital experiences 
               that transform businesses and empower growth. Our commitment to excellence and 
               innovation drives us to deliver solutions that exceed expectations and create 
               lasting value for our clients."
             </blockquote>
             <div className="flex items-center justify-center space-x-3 sm:space-x-4">
               <div className="w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-r from-primary-500 to-accent-500 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-base sm:text-xl">F</span>
+                <span className="text-white font-bold text-base sm:text-xl">DP</span>
               </div>
               <div className="text-left">
                 <div className="text-sm sm:text-base font-semibold text-dark-800">Founder & Director</div>
-                <div className="text-xs sm:text-sm text-dark-600">Veliora TechWorks</div>
+                <div className="text-xs sm:text-sm text-dark-600">Digital Purohit</div>
               </div>
             </div>
           </div>

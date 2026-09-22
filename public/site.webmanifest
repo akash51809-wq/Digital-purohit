@@ -1,11 +1,11 @@
 {
-  "name": "Veliora TechWorks",
-  "short_name": "Veliora",
+  "name": "Digital Purohit",
+  "short_name": "Digital Purohit",
   "description": "Building Intelligent Digital Solutions",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ecc94b",
+  "theme_color": "#F15A24",
   "icons": [
     {
       "src": "/favicon-192x192.png",

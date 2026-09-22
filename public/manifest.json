@@ -1,11 +1,11 @@
 {
-  "name": "Veliora TechWorks",
-  "short_name": "Veliora",
-  "description": "Professional technology solutions company specializing in web development, mobile apps, and digital transformation.",
+  "name": "Digital Purohit",
+  "short_name": "Digital Purohit",
+  "description": "Professional technology solutions, web development, mobile apps, and digital transformation.",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#ffffff",
-  "theme_color": "#ecc94b",
+  "theme_color": "#F15A24",
   "orientation": "portrait-primary",
   "icons": [
     {

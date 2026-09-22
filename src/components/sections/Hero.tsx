@@ -5,6 +5,7 @@ import { ArrowRight, CheckCircle2, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { useEffect, useState } from 'react'
+import HeroDeviceShowcase from '@/components/ui/HeroDeviceShowcase'
 
 const Hero = () => {
   const [mounted, setMounted] = useState(false)
@@ -90,23 +91,9 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right Image */}
+            {/* Right Interactive Showcase */}
             <div className="relative order-1 lg:order-2 px-4 sm:px-0">
-              <div className="relative w-full h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px]">
-                <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl sm:rounded-3xl transform rotate-3 shadow-2xl"></div>
-                <div className="absolute inset-0 bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden">
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary-100 via-accent-50 to-primary-50">
-                    <div className="text-center p-4 sm:p-8">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-r from-primary-500 to-accent-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6 shadow-xl">
-                        <span className="text-white font-bold text-2xl sm:text-3xl lg:text-4xl">V</span>
-                      </div>
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-display font-bold gradient-text mb-2 sm:mb-3">Veliora TechWorks</h3>
-                      <p className="text-dark-600 text-xs sm:text-sm mb-2 sm:mb-4">Upload hero image in Admin → Media</p>
-                      <p className="text-xs text-dark-500">Category: hero</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <HeroDeviceShowcase />
             </div>
           </div>
         </div>
@@ -217,71 +204,30 @@ const Hero = () => {
             </motion.div>
           </motion.div>
 
-          {/* Right Image */}
+          {/* Right Showcase / Image */}
           <motion.div
             initial={{ opacity: 0, x: 30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="relative order-1 lg:order-2 px-4 sm:px-0"
+            className="relative order-1 lg:order-2 px-2 sm:px-0 flex items-center justify-center"
           >
-            <div className="relative w-full h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px]">
-              {/* Decorative Card Background */}
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl sm:rounded-3xl transform rotate-3 shadow-2xl"></div>
-              <div className="absolute inset-0 bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden">
-                {heroImage ? (
+            {heroImage ? (
+              <div className="relative w-full h-[280px] sm:h-[350px] md:h-[450px] lg:h-[550px]">
+                <div className="absolute inset-0 bg-gradient-to-br from-primary-100 to-accent-100 rounded-2xl sm:rounded-3xl transform rotate-3 shadow-2xl"></div>
+                <div className="absolute inset-0 bg-white rounded-2xl sm:rounded-3xl shadow-2xl overflow-hidden">
                   <Image
                     src={heroImage}
-                    alt="Veliora TechWorks - Professional Technology Solutions"
+                    alt="Digital Purohit - Professional Technology Solutions"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 100vw, 50vw"
                     priority
                   />
-                ) : (
-                  <div className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-primary-100 via-accent-50 to-primary-50">
-                    <div className="text-center p-4 sm:p-8">
-                      <div className="w-16 h-16 sm:w-20 sm:h-20 lg:w-24 lg:h-24 bg-gradient-to-r from-primary-500 to-accent-500 rounded-xl sm:rounded-2xl flex items-center justify-center mx-auto mb-3 sm:mb-6 shadow-xl">
-                        <span className="text-white font-bold text-2xl sm:text-3xl lg:text-4xl">V</span>
-                      </div>
-                      <h3 className="text-lg sm:text-xl lg:text-2xl font-display font-bold gradient-text mb-2 sm:mb-3">Veliora TechWorks</h3>
-                      <p className="text-dark-600 text-xs sm:text-sm mb-2 sm:mb-4">Upload hero image in Admin → Media</p>
-                      <p className="text-xs text-dark-500">Category: hero</p>
-                    </div>
-                  </div>
-                )}
+                </div>
               </div>
-
-              {/* Floating Stats Card */}
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8, delay: 1 }}
-                className="absolute -bottom-4 sm:-bottom-6 -left-4 sm:-left-6 bg-white rounded-xl sm:rounded-2xl shadow-2xl p-3 sm:p-6 hidden md:block"
-              >
-                <div className="flex items-center space-x-3 sm:space-x-4">
-                  <div className="w-10 h-10 sm:w-12 sm:h-12 bg-gradient-to-r from-primary-500 to-accent-500 rounded-lg sm:rounded-xl flex items-center justify-center">
-                    <CheckCircle2 className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
-                  </div>
-                  <div>
-                    <div className="text-xl sm:text-2xl font-bold text-dark-800">{stats.services}+</div>
-                    <div className="text-xs sm:text-sm text-dark-600">Services Offered</div>
-                  </div>
-                </div>
-              </motion.div>
-
-              {/* Floating Badge */}
-              <motion.div
-                initial={{ opacity: 0, scale: 0.8 }}
-                animate={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.8, delay: 1.2 }}
-                className="absolute -top-3 sm:-top-4 -right-3 sm:-right-4 bg-gradient-to-r from-primary-500 to-accent-500 text-white rounded-full px-4 sm:px-6 py-2 sm:py-3 shadow-xl hidden lg:block"
-              >
-                <div className="text-center">
-                  <div className="text-xs sm:text-sm font-semibold">Premium Quality</div>
-                  <div className="text-xs opacity-90">Guaranteed</div>
-                </div>
-              </motion.div>
-            </div>
+            ) : (
+              <HeroDeviceShowcase />
+            )}
           </motion.div>
         </div>
       </div>

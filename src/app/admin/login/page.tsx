@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import Link from 'next/link'
+import Image from 'next/image'
 import { LogIn, Mail, Lock } from 'lucide-react'
 import toast from 'react-hot-toast'
 
@@ -41,12 +42,14 @@ export default function LoginPage() {
         {/* Logo */}
         <div className="text-center mb-8">
           <Link href="/" className="inline-flex items-center space-x-2 mb-4">
-            <div className="w-12 h-12 bg-gradient-to-r from-gray-700 to-gray-900 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-2xl">V</span>
-            </div>
-            <span className="font-display font-bold text-2xl text-gray-900">
-              Veliora TechWorks
-            </span>
+            <Image
+              src="/logo.jpg"
+              alt="Digital Purohit"
+              width={180}
+              height={45}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </Link>
           <h1 className="text-3xl font-display font-bold text-gray-900 mb-2">
             Admin Login
@@ -73,7 +76,7 @@ export default function LoginPage() {
                   onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                   required
                   className="w-full pl-10 pr-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-gray-700 focus:border-transparent transition-all duration-200"
-                  placeholder="admin@veliora-techworks.com"
+                  placeholder="digitalpurohit1@gmail.com"
                 />
               </div>
             </div>

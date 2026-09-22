@@ -3,7 +3,7 @@ import Footer from '@/components/layout/Footer'
 import Portfolio from '@/components/sections/Portfolio'
 
 export const metadata = {
-  title: 'Portfolio - Veliora TechWorks',
+  title: 'Portfolio - Digital Purohit',
   description: 'View our portfolio of successful projects and case studies showcasing our expertise in technology solutions.',
 }
 

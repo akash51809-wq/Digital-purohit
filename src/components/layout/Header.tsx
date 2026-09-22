@@ -5,6 +5,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Menu, X, ChevronDown, LogOut } from 'lucide-react'
 import { motion, AnimatePresence } from 'framer-motion'
+import AnimatedLogo from '@/components/ui/AnimatedLogo'
 
 const Header = () => {
   const [mounted, setMounted] = useState(false)
@@ -52,17 +53,8 @@ const Header = () => {
         <nav className="container-custom">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <Link href="/" className="flex items-center space-x-2">
-              <Image
-                src="/Favicon.jpg"
-                alt="Veliora TechWorks Logo"
-                width={40}
-                height={40}
-                className="rounded-lg"
-              />
-              <span className="font-display font-bold text-xl text-dark-800">
-                Veliora TechWorks
-              </span>
+            <Link href="/" className="flex items-center">
+              <AnimatedLogo width={165} height={40} />
             </Link>
 
             {/* Desktop Navigation */}
@@ -95,17 +87,8 @@ const Header = () => {
       <nav className="container-custom">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2">
-            <Image
-              src="/Favicon.jpg"
-              alt="Veliora TechWorks Logo"
-              width={40}
-              height={40}
-              className="rounded-lg"
-            />
-            <span className="font-display font-bold text-xl text-dark-800">
-              Veliora TechWorks
-            </span>
+          <Link href="/" className="flex items-center">
+            <AnimatedLogo width={165} height={40} />
           </Link>
 
           {/* Desktop Navigation */}

@@ -175,7 +175,7 @@ export default function CareersPage() {
         <div className="container-custom">
           <div className="text-center mb-12 sm:mb-16 px-4">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-dark-800 mb-4 sm:mb-6">
-              Why Choose <span className="gradient-text">Veliora</span>?
+              Why Choose <span className="gradient-text">Digital Purohit</span>?
             </h2>
             <p className="text-lg sm:text-xl text-dark-600 max-w-3xl mx-auto">
               We believe in creating an environment where our team can thrive, grow, and make meaningful impact while enjoying exceptional benefits.
@@ -257,7 +257,7 @@ export default function CareersPage() {
               <h3 className="text-xl font-semibold text-gray-600 mb-2">No Open Positions</h3>
               <p className="text-gray-500 mb-6">We don't have any open positions at the moment, but we're always looking for exceptional talent.</p>
               <a
-                href="mailto:careers@veliora-techworks.com"
+                href="mailto:digitalpurohit1@gmail.com"
                 className="btn-primary inline-flex items-center space-x-2"
               >
                 <Mail className="w-4 h-4" />
@@ -313,7 +313,7 @@ export default function CareersPage() {
                       
                       <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                         <a
-                          href={`mailto:careers@veliora-techworks.com?subject=Application for ${job.title}&body=Hi, I'm interested in the ${job.title} position.`}
+                          href={`mailto:digitalpurohit1@gmail.com?subject=Application for ${job.title}&body=Hi, I'm interested in the ${job.title} position.`}
                           className="btn-primary inline-flex items-center justify-center space-x-2 flex-1 sm:flex-none sm:min-w-[140px] py-2 sm:py-3 text-sm sm:text-base"
                         >
                           <Mail className="w-4 h-4" />
@@ -345,7 +345,7 @@ export default function CareersPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a
-                href="mailto:careers@veliora-techworks.com"
+                href="mailto:digitalpurohit1@gmail.com"
                 className="btn-secondary inline-flex items-center justify-center space-x-2 px-6 sm:px-8 py-3 sm:py-4 text-sm sm:text-base"
               >
                 <Mail className="w-4 h-4 sm:w-5 sm:h-5" />

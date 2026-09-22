@@ -55,11 +55,11 @@ const Footer = () => {
   }
 
   const socialLinks = [
-    { icon: Linkedin, href: 'https://www.linkedin.com/company/veliora-techworks/', label: 'LinkedIn' },
-    { icon: Github, href: 'https://github.com/Veliora-TechWorks', label: 'GitHub' },
-    { icon: Instagram, href: 'https://www.instagram.com/velioratechworks?igsh=MWlvZ3dhYmg2OWJjdA==', label: 'Instagram' },
-    { icon: MessageCircle, href: 'https://whatsapp.com/channel/0029VbBNCRm8Pgs9Bb8Vm72H', label: 'WhatsApp' },
-    { icon: Twitter, href: 'https://x.com/VelioraTech', label: 'Twitter' }
+    { icon: MessageCircle, href: 'https://wa.me/919335819686', label: 'WhatsApp' },
+    { icon: Instagram, href: '#', label: 'Instagram' },
+    { icon: Twitter, href: '#', label: 'Twitter' },
+    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Github, href: '#', label: 'GitHub' }
   ]
 
   return (
@@ -86,16 +86,18 @@ const Footer = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
             {/* Company Info */}
             <div>
-              <div className="flex items-center space-x-2 mb-4">
-                <Image
-                  src="/Favicon.jpg"
-                  alt="Veliora TechWorks Logo"
-                  width={40}
-                  height={40}
-                  className="rounded-lg"
-                />
+              <div className="flex items-center space-x-3 mb-4">
+                <div className="bg-white px-2.5 py-1.5 rounded-lg inline-block">
+                  <Image
+                    src="/logo.jpg"
+                    alt="Digital Purohit Logo"
+                    width={150}
+                    height={36}
+                    className="h-8 w-auto object-contain"
+                  />
+                </div>
                 <Link href="/admin/login" className="font-display font-bold text-xl hover:text-primary-400 transition-colors">
-                  Veliora TechWorks
+                  Digital Purohit
                 </Link>
               </div>
               <p className="text-sm sm:text-base text-gray-400 mb-6 leading-relaxed max-w-md">
@@ -104,23 +106,23 @@ const Footer = () => {
               
               {/* Contact Info */}
               <div className="space-y-3">
-                <a href="mailto:velioratechworks@gmail.com" className="flex items-center space-x-3 text-gray-400 hover:text-primary-400 transition-colors group">
+                <a href="mailto:digitalpurohit1@gmail.com" className="flex items-center space-x-3 text-gray-400 hover:text-primary-400 transition-colors group">
                   <div className="w-8 h-8 bg-dark-800 rounded-lg flex items-center justify-center group-hover:bg-primary-500 transition-colors">
                     <Mail className="w-4 h-4" />
                   </div>
-                  <span className="text-sm break-all">velioratechworks@gmail.com</span>
+                  <span className="text-sm break-all">digitalpurohit1@gmail.com</span>
                 </a>
-                <a href="tel:+918623896542" className="flex items-center space-x-3 text-gray-400 hover:text-primary-400 transition-colors group">
+                <a href="tel:9335819686" className="flex items-center space-x-3 text-gray-400 hover:text-primary-400 transition-colors group">
                   <div className="w-8 h-8 bg-dark-800 rounded-lg flex items-center justify-center group-hover:bg-primary-500 transition-colors">
                     <Phone className="w-4 h-4" />
                   </div>
-                  <span className="text-sm">+91 86238 96542</span>
+                  <span className="text-sm">+91 93358 19686</span>
                 </a>
                 <div className="flex items-center space-x-3 text-gray-400">
                   <div className="w-8 h-8 bg-dark-800 rounded-lg flex items-center justify-center">
                     <MapPin className="w-4 h-4" />
                   </div>
-                  <span className="text-sm">Pune, Maharashtra, India</span>
+                  <span className="text-sm">993 Meerapur, Prayagraj</span>
                 </div>
               </div>
             </div>
@@ -245,7 +247,7 @@ const Footer = () => {
         <div className="container-custom py-6">
           <div className="flex flex-col sm:flex-row items-center justify-between gap-4">
             <p className="text-xs sm:text-sm text-gray-500 text-center sm:text-left">
-              © 2026 Veliora TechWorks. All rights reserved.
+              © 2026 Digital Purohit. All rights reserved.
             </p>
             <button
               onClick={scrollToTop}
