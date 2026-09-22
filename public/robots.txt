@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://veliora-techworks.com/sitemap.xml

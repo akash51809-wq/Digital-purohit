@@ -1,0 +1,27 @@
+{
+  "name": "Veliora TechWorks",
+  "short_name": "Veliora",
+  "description": "Professional technology solutions company specializing in web development, mobile apps, and digital transformation.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#ecc94b",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/Favicon.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Favicon.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "technology", "productivity"],
+  "lang": "en",
+  "dir": "ltr"
+}
