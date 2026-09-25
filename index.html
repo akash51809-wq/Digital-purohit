@@ -88,5 +88,17 @@
 <div class="bottom">© 2026 Digital Purohit. All rights reserved.</div>
 </footer>
 
-<script>if(window.lucide)lucide.createIcons();</script>
+<script>
+(function(){
+const icons={target:"🎯",sparkles:"✦","trending-up":"↗","code-2":"⌘",cpu:"◉",search:"⌕","pen-tool":"✎",rocket:"🚀","check-circle-2":"✓",gauge:"◌","shield-check":"✓","layout-dashboard":"▦","layers-3":"▤","plug-zap":"⚡",bot:"◉","file-text":"▤",cloud:"☁","bar-chart-3":"▥",send:"➤",users:"♙","message-circle":"◌",zap:"⚡"};
+function renderIcons(){
+ if(window.lucide&&typeof window.lucide.createIcons==="function"){try{window.lucide.createIcons();return;}catch(e){}}
+ document.querySelectorAll("i[data-lucide]").forEach(function(el){
+   var s=document.createElement("span");s.className="icon-fallback";s.textContent=icons[el.getAttribute("data-lucide")]||"•";el.replaceWith(s);
+ });
+}
+if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",renderIcons);else renderIcons();
+window.addEventListener("load",function(){setTimeout(renderIcons,300);});
+})();
+</script>
 </body></html>
