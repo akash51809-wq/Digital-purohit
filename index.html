@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Veliora TechWorks — Intelligent technology and digital solutions.">
+<title>Veliora TechWorks | Digital Solutions</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <div class="nav">
+    <a class="logo" href="./">Veliora<span>TechWorks</span></a>
+    <button class="menu" aria-label="Menu" onclick="document.querySelector('.links').classList.toggle('open')">☰</button>
+    <nav class="links">
+      <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#articles">Articles</a><a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section id="home" class="hero">
+  <div class="glow glow1"></div><div class="glow glow2"></div>
+  <div class="hero-grid">
+    <div class="hero-copy">
+      <div class="badge">✦ Trusted by Industry Leaders</div>
+      <h1>Transform Your Business with <span>Intelligent Technology</span></h1>
+      <p>We build scalable, intelligent digital solutions that drive growth, enhance efficiency, and position your business for long-term success.</p>
+      <div class="features"><span>✓ Enterprise-grade solutions</span><span>✓ Scalable architecture</span><span>✓ 24/7 dedicated support</span></div>
+      <div class="buttons"><a class="btn primary" href="#contact">Start Your Project →</a><a class="btn outline" href="#portfolio">View Our Work</a></div>
+      <div class="stats"><div><b>50+</b><small>Projects</small></div><div><b>25+</b><small>Articles</small></div><div><b>24/7</b><small>Support</small></div></div>
+    </div>
+    <div class="showcase"><div class="device"><div class="screen"><div class="screen-top">VELIORA <i>●</i></div><div class="chart"></div><div class="cards"><div></div><div></div><div></div></div></div></div></div>
+  </div>
+</section>
+<section id="about" class="section"><div class="section-head"><div class="eyebrow">ABOUT US</div><h2>Technology that moves your <span>business forward.</span></h2><p>We create modern digital experiences and scalable technology solutions focused on measurable business outcomes.</p></div></section>
+<section id="services" class="section soft"><div class="section-head"><div class="eyebrow">WHAT WE DO</div><h2>Our <span>Services</span></h2></div><div class="grid three"><article><div class="icon">⌘</div><h3>Web Development</h3><p>Fast, responsive and conversion-focused digital experiences.</p></article><article><div class="icon">◇</div><h3>Digital Solutions</h3><p>Scalable technology designed around your business workflows.</p></article><article><div class="icon">✦</div><h3>Technology Consulting</h3><p>Practical strategy and architecture for long-term growth.</p></article></div></section>
+<section id="portfolio" class="section"><div class="section-head"><div class="eyebrow">OUR WORK</div><h2>Selected <span>Projects</span></h2></div><div class="grid three"><article class="project"><div class="project-art">01</div><h3>Digital Platform</h3><p>Modern business platform</p></article><article class="project"><div class="project-art">02</div><h3>Smart Automation</h3><p>Intelligent workflow solution</p></article><article class="project"><div class="project-art">03</div><h3>Enterprise Experience</h3><p>Scalable digital product</p></article></div></section>
+<section id="articles" class="section soft"><div class="section-head"><div class="eyebrow">INSIGHTS</div><h2>Insights & <span>Innovation</span></h2><p>Stay updated with technology trends, best practices and practical digital insights.</p></div></section>
+<section id="contact" class="section contact"><div class="section-head"><div class="eyebrow">GET IN TOUCH</div><h2>Let's build something <span>great.</span></h2><p>Tell us about your project and we will get back to you.</p><a class="btn primary" href="mailto:digitalpurohit1@gmail.com">Contact Us →</a></div></section>
+</main>
+<footer><div>© 2026 Veliora TechWorks. All rights reserved.</div><div>Digital Purohit</div></footer>
+<script>document.querySelectorAll('.links a').forEach(a=>a.addEventListener('click',()=>document.querySelector('.links').classList.remove('open')))</script>
+</body></html>
