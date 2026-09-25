@@ -1,10 +1,11 @@
 <!doctype html>
 <html lang="en">
 <head>
+<base href="../">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Digital Purohit — Digital Products & Technology Solutions</title>
-<base href="../">\n<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./static.css">
@@ -90,27 +91,9 @@
 </footer>
 
 <script>
-const SITE_BASE='/Digital-purohit';
-const currentPage=location.pathname.replace(/\\/+$/,'').split('/').pop()||'home';
-function goToPage(page,updateUrl=true){
-  const target=document.getElementById(page);
-  if(!target)return;
-  if(updateUrl)history.pushState({page},'',SITE_BASE+'/'+page);
-  document.body.classList.remove('open');
-  target.scrollIntoView({behavior:'smooth',block:'start'});
-}
-document.querySelectorAll('a[href^="'+SITE_BASE+'/"]').forEach(a=>{
-  a.addEventListener('click',e=>{
-    const page=a.getAttribute('href').replace(SITE_BASE+'/','').replace(/\\/+$/,'')||'home';
-    if(document.getElementById(page)){
-      e.preventDefault();
-      goToPage(page,true);
-    }
-  });
-});
-window.addEventListener('popstate',()=>goToPage(location.pathname.replace(/\\/+$/,'').split('/').pop()||'home',false));
+const currentPage=location.pathname.replace(/\/+$/,'').split('/').pop()||'home';
 if(currentPage!=='home' && document.getElementById(currentPage)){
-  setTimeout(()=>goToPage(currentPage,false),80);
+  window.addEventListener('load',()=>setTimeout(()=>document.getElementById(currentPage).scrollIntoView({behavior:'smooth',block:'start'}),100));
 }
 if(window.lucide)lucide.createIcons();
 </script>
