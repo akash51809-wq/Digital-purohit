@@ -119,3 +119,46 @@ p{color:var(--muted)}
 .product-real-preview:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(0,0,0,.12));pointer-events:none}
 .product-real-preview .preview-badge{z-index:5}
 @media(max-width:520px){.product-real-preview{height:250px!important}}
+
+/* ===== DIGITAL PUROHIT 3D EXPERIENCE LAYER ===== */
+:root{--dp-orange:#f97316;--dp-gold:#d69e2e;--dp-navy:#101827;--dp-cream:#fffaf2;--dp-glass:rgba(255,255,255,.72)}
+body{overflow-x:hidden;background:radial-gradient(circle at 10% 10%,rgba(246,180,70,.08),transparent 28%),radial-gradient(circle at 90% 30%,rgba(249,115,22,.07),transparent 30%),#fff}
+body:before,body:after{content:"";position:fixed;pointer-events:none;z-index:-1;border-radius:50%;filter:blur(55px);opacity:.22}
+body:before{width:260px;height:260px;left:-100px;top:25%;background:#f6c85f;animation:dpFloat 10s ease-in-out infinite}
+body:after{width:300px;height:300px;right:-120px;bottom:10%;background:#f97316;animation:dpFloat 13s ease-in-out infinite reverse}
+.section,.hero,.project-cta,.capability-strip{position:relative}
+.section:before{content:"";position:absolute;width:180px;height:180px;border:1px solid rgba(214,158,46,.12);border-radius:50%;right:4%;top:8%;pointer-events:none;animation:dpSpin 24s linear infinite}
+.heading h2,h1,h3{font-family:"Plus Jakarta Sans",Inter,Arial,sans-serif}
+.heading h2{letter-spacing:-1.4px}
+.nav a,.nav-cta,.primary,.outline,.darkbtn,.product-card,.build-card,.process-step,.service-card,.cards article,.project,.tech-card,.industry-card,.security-card,.case-card,.about-pro-grid,.contact-grid,.info{transform-style:preserve-3d}
+.nav a{transition:transform .25s ease,color .25s ease}.nav a:hover{transform:translateY(-2px) scale(1.03)}
+.primary,.outline,.darkbtn,.nav-cta{transition:transform .3s ease,box-shadow .3s ease}
+.primary:hover,.darkbtn:hover,.nav-cta:hover{transform:translateY(-4px) translateZ(10px);box-shadow:0 18px 35px rgba(249,115,22,.28)}
+.outline:hover{transform:translateY(-3px) translateZ(8px)}
+.build-card,.cards article,.process-step,.project,.product-card,.tech-card,.industry-card,.security-card,.case-card{transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s ease,border-color .45s ease}
+.build-card:hover,.cards article:hover,.process-step:hover,.project:hover,.product-card:hover,.tech-card:hover,.industry-card:hover,.security-card:hover,.case-card:hover{transform:translateY(-10px) rotateX(2deg) rotateY(-2deg);box-shadow:0 28px 60px rgba(31,41,55,.14)}
+.build-icon,.icon,.tech-icon,.industry-icon,.security-icon{position:relative;transform:translateZ(18px)}
+.build-icon:after,.icon:after,.tech-icon:after,.industry-icon:after,.security-icon:after{content:"";position:absolute;inset:-10px;border-radius:50%;border:1px solid rgba(249,115,22,.16);animation:dpPulse 3s ease-in-out infinite}
+.dp-section-dark{background:linear-gradient(135deg,#0b1220,#162236 58%,#0d1728);color:#fff;overflow:hidden}
+.dp-section-dark p{color:#cbd5e1}.dp-section-dark .heading label{color:#f6c85f}.dp-section-dark .heading h2{color:#fff}
+.dp-section-dark:after{content:"";position:absolute;width:420px;height:420px;right:-130px;top:-170px;border:1px solid rgba(255,255,255,.09);border-radius:50%;box-shadow:0 0 0 55px rgba(255,255,255,.025),0 0 0 110px rgba(255,255,255,.018);animation:dpSpin 30s linear infinite}
+.industry-grid,.tech-grid,.security-grid,.case-grid{max-width:1150px;margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.industry-card,.tech-card,.security-card,.case-card{padding:28px;border:1px solid rgba(214,158,46,.16);border-radius:24px;background:linear-gradient(145deg,rgba(255,255,255,.94),rgba(255,249,238,.72));box-shadow:0 15px 35px rgba(15,23,42,.07);position:relative;overflow:hidden}
+.industry-card:before,.tech-card:before,.security-card:before,.case-card:before{content:"";position:absolute;width:130px;height:130px;border-radius:50%;right:-60px;top:-60px;background:linear-gradient(135deg,rgba(249,115,22,.2),rgba(214,158,46,.03));animation:dpFloat 8s ease-in-out infinite}
+.industry-card h3,.tech-card h3,.security-card h3,.case-card h3{margin:15px 0 8px;font-size:21px}
+.industry-card p,.tech-card p,.security-card p,.case-card p{font-size:14px}
+.dp-pills{display:flex;flex-wrap:wrap;gap:9px;margin-top:18px}.dp-pills span{padding:8px 12px;border-radius:999px;background:#fff;border:1px solid #f1e4cf;font-size:12px;font-weight:800;box-shadow:0 5px 14px rgba(0,0,0,.05);transition:.3s}.dp-pills span:hover{transform:translateY(-3px) translateZ(8px);border-color:#f97316}
+.dp-orb{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;background:linear-gradient(145deg,#fff,#ffe8c7);box-shadow:inset 2px 2px 7px #fff,10px 12px 25px rgba(249,115,22,.14);transform:rotateX(10deg) rotateY(-10deg);animation:dpOrb 5s ease-in-out infinite}
+.dp-orb i{width:25px;height:25px;color:#f97316}
+.tech-grid{grid-template-columns:repeat(4,1fr)}.tech-card{padding:24px}.tech-card strong{display:block;font-size:16px}.tech-card small{display:block;margin-top:6px;color:#68717c}
+.case-grid{grid-template-columns:repeat(2,1fr)}.case-card{min-height:240px}.case-card .case-meta{display:flex;justify-content:space-between;color:#b7791f;font-size:11px;font-weight:900;letter-spacing:1.5px}.case-card a{display:inline-block;margin-top:16px;font-weight:800;color:#f97316}
+.dp-process-line{max-width:1050px;margin:0 auto 35px;height:2px;background:linear-gradient(90deg,transparent,#f97316,#d69e2e,transparent);position:relative}.dp-process-line:after{content:"";position:absolute;left:0;top:-4px;width:10px;height:10px;border-radius:50%;background:#f97316;box-shadow:0 0 20px #f97316;animation:dpTravel 5s linear infinite}
+.reveal{opacity:0;transform:translateY(28px) scale(.98);transition:opacity .75s ease,transform .75s cubic-bezier(.2,.8,.2,1)}.reveal.visible{opacity:1;transform:none}
+.dp-3d-scene{perspective:1000px}.dp-3d-card{transform:rotateX(7deg) rotateY(-8deg);transition:transform .2s ease;box-shadow:25px 30px 60px rgba(15,23,42,.18)}
+@keyframes dpFloat{0%,100%{transform:translate3d(0,0,0)}50%{transform:translate3d(0,-18px,0)}}
+@keyframes dpSpin{to{transform:rotate(360deg)}}@keyframes dpPulse{0%,100%{transform:scale(.92);opacity:.25}50%{transform:scale(1.08);opacity:.8}}
+@keyframes dpOrb{0%,100%{transform:rotateX(8deg) rotateY(-8deg) translateY(0)}50%{transform:rotateX(-4deg) rotateY(10deg) translateY(-7px)}}
+@keyframes dpTravel{to{left:100%}}
+@media(max-width:850px){.industry-grid,.tech-grid,.security-grid,.case-grid{grid-template-columns:1fr 1fr}.tech-grid{grid-template-columns:1fr 1fr}.section:before{display:none}}
+@media(max-width:600px){.industry-grid,.tech-grid,.security-grid,.case-grid{grid-template-columns:1fr}.dp-section-dark:after{width:260px;height:260px}.industry-card,.tech-card,.security-card,.case-card{padding:22px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
