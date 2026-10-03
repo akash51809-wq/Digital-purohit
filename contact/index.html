@@ -6,7 +6,9 @@
 <div class="heading"><h2>Get In <span>Touch</span></h2><p>Ready to transform your business with cutting-edge technology? Let's discuss your project and bring your vision to life.</p></div>
 <div class="contact-grid"><form onsubmit="event.preventDefault();alert('Please email us directly at digitalpurohit1@gmail.com');"><input required placeholder="Full Name *"><input required type="email" placeholder="Email Address *"><input placeholder="Phone"><input placeholder="Company"><input class="full" placeholder="Subject"><textarea class="full" rows="5" placeholder="Your Message"></textarea><button class="primary full">Send Message →</button></form>
 <div class="info"><h3>Let's start a conversation</h3><p>We're here to help you transform your ideas into reality.</p><a href="mailto:digitalpurohit1@gmail.com">✉ digitalpurohit1@gmail.com</a><a href="tel:9335819686">☎ +91 93358 19686</a><span>⌖ 993 Meerapur, Prayagraj</span></div></div>
-</section></main><footer>
+</section>
+<section class="section dp-section-dark" id="start-project"><div class="heading"><label>START YOUR SOFTWARE PROJECT</label><h2>Let's Build Your <span>Digital Product</span></h2><p>Share the problem, workflow or idea. We can shape it into a clear software requirement and development plan.</p></div><div class="case-grid"><div class="case-card"><div class="dp-orb"><i data-lucide="lightbulb"></i></div><h3>Have an Idea?</h3><p>Tell us what you want the software to do, who will use it and what problem it should solve.</p></div><div class="case-card"><div class="dp-orb"><i data-lucide="workflow"></i></div><h3>Need Automation?</h3><p>Describe the repetitive workflow and the services or systems you want to connect.</p></div></div></section>
+<footer>
 <div class="footer-cta"><div><h2>Ready to Start Your Project?</h2><p>Let's build something amazing together</p></div><a class="darkbtn" href="/contact/">Get Started</a></div>
 <div class="footer-main">
 <div><div class="flogo"><img src="/public/logo.jpg" alt="Digital Purohit Logo"></div></div>
@@ -25,5 +27,18 @@ function renderIcons(){
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",renderIcons);else renderIcons();
 window.addEventListener("load",function(){setTimeout(renderIcons,300);});
+})();
+</script><script>
+(function(){
+function reveal(){document.querySelectorAll('.reveal').forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight*.9)el.classList.add('visible')})}
+document.addEventListener('DOMContentLoaded',function(){
+ document.querySelectorAll('.industry-card,.tech-card,.security-card,.case-card,.build-card,.process-step,.cards article,.project,.product-card').forEach(function(el){el.classList.add('reveal')});
+ reveal();
+ document.querySelectorAll('.dp-3d-card').forEach(function(card){
+  card.addEventListener('pointermove',function(e){var r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform='rotateX('+(-y*8)+'deg) rotateY('+(x*10)+'deg) translateZ(8px)'});
+  card.addEventListener('pointerleave',function(){card.style.transform=''});
+ });
+});
+window.addEventListener('scroll',reveal,{passive:true});
 })();
 </script></body></html>
