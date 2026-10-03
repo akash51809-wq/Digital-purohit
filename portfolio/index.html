@@ -8,7 +8,14 @@
 <div class="project project-one"><div class="project-preview"><span>DP</span><small>WEB & SOFTWARE</small></div><div class="project-info"><small>DIGITAL PRODUCT</small><h3>Digital Solutions</h3><p>Modern software experience focused on usability and scalable digital workflows.</p><a href="/contact/">View Details →</a></div></div>
 <div class="project project-two"><div class="project-preview"><span>VTW</span><small>WEB PLATFORM</small></div><div class="project-info"><small>WEB DEVELOPMENT</small><h3>Modern Web Platform</h3><p>Responsive web platform with a clean interface and performance-focused structure.</p><a href="/contact/">View Details →</a></div></div>
 </div>
-</section></main><footer>
+
+</section>
+<section class="section dp-section-dark" id="case-studies"><div class="heading"><label>CASE STUDIES</label><h2>Selected <span>Digital Workflows</span></h2><p>Examples of product directions and solution patterns across business software, automation and API-driven systems.</p></div><div class="case-grid">
+<div class="case-card"><div class="case-meta"><span>BUSINESS SOFTWARE</span><span>01</span></div><h3>Recharge & API Platform</h3><p>API-centric business software can bring operators, transactions, reports, users and integrations into a single workflow.</p><div class="dp-pills"><span>API</span><span>Dashboard</span><span>Reports</span></div></div>
+<div class="case-card"><div class="case-meta"><span>COMMUNICATION</span><span>02</span></div><h3>WhatsApp Automation</h3><p>Messaging, groups, scheduling, APIs and reporting can be organized into one operational workspace.</p><div class="dp-pills"><span>Messaging</span><span>Groups</span><span>Automation</span></div></div>
+<div class="case-card"><div class="case-meta"><span>DOCUMENT WORKFLOW</span><span>03</span></div><h3>Invoice & Data Processing</h3><p>Document-heavy operations can be streamlined with extraction, validation, storage and reporting workflows.</p><div class="dp-pills"><span>AI</span><span>PDF</span><span>Reports</span></div></div>
+<div class="case-card"><div class="case-meta"><span>PRODUCT ENGINEERING</span><span>04</span></div><h3>Custom Business Portal</h3><p>Customer and internal portals can combine authentication, role-based access, data management and responsive interfaces.</p><div class="dp-pills"><span>Portal</span><span>RBAC</span><span>Cloud</span></div></div>
+</div></section></main><footer>
 <div class="footer-cta"><div><h2>Ready to Start Your Project?</h2><p>Let's build something amazing together</p></div><a class="darkbtn" href="/contact/">Get Started</a></div>
 <div class="footer-main">
 <div><div class="flogo"><img src="/public/logo.jpg" alt="Digital Purohit Logo"></div></div>
@@ -27,5 +34,18 @@ function renderIcons(){
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",renderIcons);else renderIcons();
 window.addEventListener("load",function(){setTimeout(renderIcons,300);});
+})();
+</script><script>
+(function(){
+function reveal(){document.querySelectorAll('.reveal').forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight*.9)el.classList.add('visible')})}
+document.addEventListener('DOMContentLoaded',function(){
+ document.querySelectorAll('.industry-card,.tech-card,.security-card,.case-card,.build-card,.process-step,.cards article,.project,.product-card').forEach(function(el){el.classList.add('reveal')});
+ reveal();
+ document.querySelectorAll('.dp-3d-card').forEach(function(card){
+  card.addEventListener('pointermove',function(e){var r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform='rotateX('+(-y*8)+'deg) rotateY('+(x*10)+'deg) translateZ(8px)'});
+  card.addEventListener('pointerleave',function(){card.style.transform=''});
+ });
+});
+window.addEventListener('scroll',reveal,{passive:true});
 })();
 </script></body></html>
