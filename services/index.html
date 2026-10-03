@@ -12,7 +12,10 @@
 <article><div class="icon"><span class="icon-orb"></span><i data-lucide="database"></i></div><h3>Database & Cloud</h3><p>Well-structured data systems and deployment solutions designed for reliability, speed, and growth.</p><a href="/contact/">Discuss a Project →</a></article>
 <article><div class="icon"><span class="icon-orb"></span><i data-lucide="bot"></i></div><h3>AI & Automation</h3><p>Practical AI-powered workflows and automation that reduce repetitive work and improve productivity.</p><a href="/contact/">Discuss a Project →</a></article>
 </div>
-</section></main><footer>
+</section>
+<section class="section" id="integrations"><div class="heading"><label>API & INTEGRATION</label><h2>Connect Your <span>Digital Ecosystem</span></h2><p>Build the connective layer between your application, business tools and external services.</p></div><div class="tech-grid"><div class="tech-card"><div class="dp-orb"><i data-lucide="plug-zap"></i></div><h3>REST APIs</h3><p>Structured APIs for applications, partners and internal systems.</p></div><div class="tech-card"><div class="dp-orb"><i data-lucide="webhook"></i></div><h3>Webhooks</h3><p>Event-driven connections for real-time business workflows.</p></div><div class="tech-card"><div class="dp-orb"><i data-lucide="message-circle"></i></div><h3>Communication</h3><p>Messaging and notification integrations for customer operations.</p></div><div class="tech-card"><div class="dp-orb"><i data-lucide="credit-card"></i></div><h3>Payments</h3><p>Payment and transaction integrations where required by the product.</p></div></div></section>
+<section class="section dp-section-dark" id="cloud-security"><div class="heading"><label>CLOUD • SECURITY • SCALE</label><h2>Ready for <span>Real-World Deployment</span></h2><p>Deployment architecture can be designed for the product's traffic, data, availability and operational needs.</p></div><div class="security-grid"><div class="security-card"><div class="dp-orb"><i data-lucide="cloud"></i></div><h3>Cloud Deployment</h3><p>Deploy on managed cloud platforms, VPS or suitable hosting environments.</p></div><div class="security-card"><div class="dp-orb"><i data-lucide="shield-check"></i></div><h3>Authentication</h3><p>Protected routes, roles, sessions and API access controls.</p></div><div class="security-card"><div class="dp-orb"><i data-lucide="database-backup"></i></div><h3>Backups</h3><p>Plan database and application backups around business continuity needs.</p></div><div class="security-card"><div class="dp-orb"><i data-lucide="gauge"></i></div><h3>Performance</h3><p>Optimize application flow, database queries and user experience.</p></div><div class="security-card"><div class="dp-orb"><i data-lucide="activity"></i></div><h3>Monitoring</h3><p>Keep deployment health and important workflows observable.</p></div><div class="security-card"><div class="dp-orb"><i data-lucide="scaling"></i></div><h3>Scalability</h3><p>Prepare architecture to grow with users, data and integrations.</p></div></div></section>
+</main><footer>
 <div class="footer-cta"><div><h2>Ready to Start Your Project?</h2><p>Let's build something amazing together</p></div><a class="darkbtn" href="/contact/">Get Started</a></div>
 <div class="footer-main">
 <div><div class="flogo"><img src="/public/logo.jpg" alt="Digital Purohit Logo"></div></div>
@@ -31,5 +34,18 @@ function renderIcons(){
 }
 if(document.readyState==="loading")document.addEventListener("DOMContentLoaded",renderIcons);else renderIcons();
 window.addEventListener("load",function(){setTimeout(renderIcons,300);});
+})();
+</script><script>
+(function(){
+function reveal(){document.querySelectorAll('.reveal').forEach(function(el){if(el.getBoundingClientRect().top<window.innerHeight*.9)el.classList.add('visible')})}
+document.addEventListener('DOMContentLoaded',function(){
+ document.querySelectorAll('.industry-card,.tech-card,.security-card,.case-card,.build-card,.process-step,.cards article,.project,.product-card').forEach(function(el){el.classList.add('reveal')});
+ reveal();
+ document.querySelectorAll('.dp-3d-card').forEach(function(card){
+  card.addEventListener('pointermove',function(e){var r=card.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform='rotateX('+(-y*8)+'deg) rotateY('+(x*10)+'deg) translateZ(8px)'});
+  card.addEventListener('pointerleave',function(){card.style.transform=''});
+ });
+});
+window.addEventListener('scroll',reveal,{passive:true});
 })();
 </script></body></html>
