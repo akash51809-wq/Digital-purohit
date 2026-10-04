@@ -177,3 +177,10 @@ header nav{height:76px}
 
 /* Logo white-background removal effect */
 .logo img,.logo img.site-logo{mix-blend-mode:multiply;background:transparent;border-radius:0}
+
+
+/* Convert the legacy JPG logo's white pixels to transparency and enlarge the visible mark */
+.logo{width:84px;height:76px;overflow:visible}
+.logo img,.logo img.site-logo{width:84px;height:84px;min-width:84px;max-width:none;max-height:none;object-fit:contain;border-radius:0;background:transparent;mix-blend-mode:normal;filter:url("/public/remove-white.svg#remove-white");}
+@media(max-width:800px){.logo{width:84px;height:76px}.logo img,.logo img.site-logo{width:84px;height:84px;min-width:84px}}
+@media(max-width:520px){.logo{width:84px;height:76px}.logo img,.logo img.site-logo{width:84px;height:84px;min-width:84px}}
