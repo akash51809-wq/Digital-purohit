@@ -184,3 +184,5 @@ header nav{height:76px}
 .logo img,.logo img.site-logo{width:84px;height:84px;min-width:84px;max-width:none;max-height:none;object-fit:contain;border-radius:0;background:transparent;mix-blend-mode:normal;filter:url("/public/remove-white.svg#remove-white");}
 @media(max-width:800px){.logo{width:84px;height:76px}.logo img,.logo img.site-logo{width:84px;height:84px;min-width:84px}}
 @media(max-width:520px){.logo{width:84px;height:76px}.logo img,.logo img.site-logo{width:84px;height:84px;min-width:84px}}
+
+.logo img,.logo img.site-logo{filter:none!important;mix-blend-mode:multiply!important;width:96px!important;height:96px!important;min-width:96px!important;max-width:none!important;max-height:none!important}.logo{width:96px!important;height:76px!important}
