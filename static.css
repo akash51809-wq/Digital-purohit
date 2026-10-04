@@ -186,3 +186,5 @@ header nav{height:76px}
 @media(max-width:520px){.logo{width:84px;height:76px}.logo img,.logo img.site-logo{width:84px;height:84px;min-width:84px}}
 
 .logo img,.logo img.site-logo{filter:none!important;mix-blend-mode:multiply!important;width:96px!important;height:96px!important;min-width:96px!important;max-width:none!important;max-height:none!important}.logo{width:96px!important;height:76px!important}
+/* Extra-large header logo */
+header nav{height:76px}.logo{width:112px!important;height:76px!important;overflow:visible!important}.logo img,.logo img.site-logo{width:112px!important;height:112px!important;min-width:112px!important;max-width:none!important;max-height:none!important;object-fit:contain!important}
