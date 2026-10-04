@@ -188,3 +188,66 @@ header nav{height:76px}
 .logo img,.logo img.site-logo{filter:none!important;mix-blend-mode:multiply!important;width:96px!important;height:96px!important;min-width:96px!important;max-width:none!important;max-height:none!important}.logo{width:96px!important;height:76px!important}
 /* Extra-large header logo */
 header nav{height:76px}.logo{width:116px!important;height:76px!important;overflow:visible!important}.logo img,.logo img.site-logo{width:116px!important;height:116px!important;min-width:116px!important;max-width:none!important;max-height:none!important;object-fit:contain!important}
+
+/* ===== GLOBAL COLOR CONTRAST / READABILITY FIX ===== */
+/* Only foreground/background contrast is adjusted; layout, spacing, sizing, animation and component design remain unchanged. */
+body{color:#17202a}
+body p{color:#4b5563}
+.heading h2,.heading h3,.heading p{color:#17202a}
+.heading p{color:#4b5563}
+.badge{color:#17202a}
+.features b{color:#25313d}
+.stats small{color:#4b5563}
+.about-story p,.about-story small,.about-pro p{color:#4b5563}
+.cards article h3,.cards article p,.cards article a{color:#17202a}
+.cards article p{color:#4b5563}
+.project-info h3,.project-info p,.project-info a{color:#17202a}
+.project-info p{color:#4b5563}
+.product-content h3,.product-content p{color:#17202a}
+.product-content p{color:#4b5563}
+.product-features span{color:#6b4f1d}
+.info h3{color:#17202a}
+.info p,.info a,.info span{color:#374151}
+input,textarea{color:#17202a;background:#fff;border-color:#cfd5dc}
+input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}
+.nav a{color:#25313d}
+.nav a:hover{color:#c2410c}
+.capability-strip{color:#334155}
+.process-step h3,.process-step p{color:#17202a}
+.process-step p{color:#4b5563}
+.trust-copy h2{color:#17202a}
+.trust-copy p{color:#4b5563}
+.trust-points b{color:#17202a}
+.trust-points small{color:#4b5563}
+.expertise-card h3,.process-detail h3,.support-card h3{color:#17202a}
+.expertise-card p,.process-detail p,.support-card p{color:#4b5563}
+.expertise-card small,.process-detail b{color:#9a670f}
+.faq-grid summary{color:#17202a}
+.faq-grid details p{color:#4b5563}
+.dp-pills span{color:#6b4f1d}
+.dp-section-dark{color:#f8fafc}
+.dp-section-dark .heading h2{color:#fff}
+.dp-section-dark .heading p{color:#dbe4ee}
+.dp-section-dark .industry-card h3,.dp-section-dark .tech-card h3,.dp-section-dark .case-card h3{color:#17202a}
+.dp-section-dark .industry-card p,.dp-section-dark .tech-card p,.dp-section-dark .case-card p{color:#4b5563}
+.dp-section-dark .security-card h3{color:#fff}
+.dp-section-dark .security-card p{color:#d9e2ec}
+.dp-section-dark .security-card .dp-pills span{color:#6b4f1d}
+.deployment-section h2,.deployment-section h3{color:#fff}
+.deployment-section p{color:#d7dee6}
+.deployment-section .heading p{color:#dbe4ee}
+footer{color:#f8fafc}
+footer p{color:#cbd5e1}
+.footer-main h3{color:#fff}
+.footer-main a{color:#d1d5db}
+.footer-main a:hover{color:#fff}
+.bottom{color:#b8c0ca}
+.dp-faq .heading h2{color:#fff}
+.dp-faq .heading p{color:#dbe4ee}
+.dp-faq .heading label{color:#f8c76a}
+.dp-support .heading h2{color:#17202a}
+.dp-support .heading p{color:#4b5563}
+.dp-quote .quote-panel h2{color:#fff}
+.dp-quote .quote-panel p{color:#cbd5e1}
+.quote-points span{color:#e8edf2}
+@media(prefers-contrast:more){body p,.heading p,.cards article p,.project-info p,.product-content p,.process-step p,.trust-copy p,.trust-points small,.expertise-card p,.process-detail p,.support-card p,.faq-grid details p{color:#374151}.dp-section-dark .heading p,.dp-section-dark .security-card p,.deployment-section p,.dp-faq .heading p,.dp-quote .quote-panel p{color:#e5e7eb}}
